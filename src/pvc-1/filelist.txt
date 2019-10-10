@@ -1,0 +1,17 @@
+# CRCNS.org 'pvc-1' dataset files
+# To use this for fetching files, comment out files that are
+# not needed by putting a '#' as the first character on the line (default mode)
+# or put a '+' as the first character to specifiy files to be fetched (+ mode).
+# mode='default' (change to '+' for + mode).
++crcns-pvc1.zip	1798039870 (1.6 GB)
+ #docs/crcns-pvc1-readme.pdf	433546 (423.3 KB)
+ #docs/crcns_pvc1_format.doc	51712 (50.5 KB)
+ +docs/crcns_pvc1_format.pdf	89944 (87.8 KB)
+ +other-formats/00-README-pvc1-other-formats.txt	806
+ +other-formats/ad1_u619.h5	148375568 (141.5 MB)
++other-formats/ad1_u619_ndf.zip	93054978 (88.7 MB)
+ +other-formats/ad1_u619_simple.mat	99630525 (95.0 MB)
+ +other-formats/crcns_pvc1_conversion_scripts.doc	119808 (117.0 KB)
+ +other-formats/crcns_pvc1_conversion_scripts.pdf	176098 (171.9 KB)
+ +other-formats/crcns_pvc1_conversion_scripts.zip	22362 (21.8 KB)
+ +checksums.md5	799
