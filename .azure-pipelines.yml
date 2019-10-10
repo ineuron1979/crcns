@@ -21,14 +21,14 @@ steps:
 
 - script: |
     pip install numpy
+    pip install crcnsget
 
 - script: |
     chmod +x ./download.sh
     chmod +x ./verify.sh
-    ./download.sh pvc-1
+    #./download.sh pvc-1
     free -h
     free -g
-    apt-get install vim
-    ip a
+    crcnsget --username crcnsget --dataset alm-1/datafiles/data_structure_files/data_structure_ANM218457.tar.gz
 
   
