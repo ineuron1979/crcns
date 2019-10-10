@@ -1,0 +1,45 @@
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  script:
+  # this configures Django application to use attached postgres database that is run on `postgres` host
+  #- export DATABASE_URL=postgres://postgres:@postgres:5432/python-test-app
+  - free -g
+  - apt-get update -qy
+  - apt-get install -y python3-dev python3-pip
+  #- pip3 install tensorflow==1.13.1
+  #- pip3 install keras
+  #- pip3 install dropbox
+  #- pip3 install pandas
+  #- pip3 install matplotlib
+  #- pip3 install itertools
+  #- pip3 install scikit-learn
+  
+  
+  - chmod +x ./download.sh
+  - chmod +x ./verify.sh
+  
+  - ./download.sh pvc-1
+
+  
+
+staging:
+  stage: deploy
+  script:
+  - apt-get update -qy
+  #- apt-get install -y ruby-dev
+  #- gem install dpl
+  #- dpl --provider=heroku --app=gitlab-ci-python-test-staging --api-key=$HEROKU_STAGING_API_KEY
+  only:
+  - master
+
+production:
+  stage: deploy
+  script:
+  - apt-get update -qy
+  
+  only:
+  - tags
