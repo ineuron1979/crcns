@@ -27,8 +27,8 @@ steps:
     chmod +x ./download.sh
     chmod +x ./verify.sh
     #./download.sh pvc-1
-    free -h
+    wget http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_24_1/chembl_24_1_sqlite.tar.gz
+    ls -sh
     free -g
-    crcnsget --username crcnsget --dataset alm-1/datafiles/data_structure_files/data_structure_ANM218457.tar.gz
 
   
